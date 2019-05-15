@@ -1,0 +1,55 @@
+#root {
+  background: #f3f3f3;
+}
+
+.gameover {
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.gameover-inner {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 20px;
+}
+.gameover-title {
+  padding: 10px 0 10px 0;
+  font-size: 2.5em;
+}
+
+.game-item-wrapper {
+  background: white;
+  margin: 10px 5px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.1);
+  transition: 0.1s ease;
+}
+
+.game-item-wrapper:hover {
+  background: #f9f9f9;
+}
+
+.game-item-wrapper img {
+  margin: 0 5px;
+}
+
+.game-item-title {
+  display: flex;
+  align-items: center;
+}
+.day-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.team-abr {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.at-spacer {
+  margin: 0 20px;
+}

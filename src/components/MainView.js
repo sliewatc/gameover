@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import scheduleStore from "../stores/scheduleStore";
+import { observer } from 'mobx-react'
 import GameCard from './GameCard'
 
 class MainView extends Component {
@@ -19,7 +20,7 @@ class MainView extends Component {
     renderSchedule() {
         if (this.state.waiting) {
             return(
-                <span>WAITING</span>
+                <span></span>
             )
         } else {
             return (
@@ -41,4 +42,4 @@ class MainView extends Component {
     }
 }
 
-export default MainView
+export default observer(MainView)

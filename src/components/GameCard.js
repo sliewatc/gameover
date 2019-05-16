@@ -1,6 +1,15 @@
 import React, { Component } from 'react'
 import GameItem from "./GameItem";
 
+function makeDateString(date) {
+    let stringDate = new Date(date)
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+    console.log(stringDate.toDateString(options))
+    return stringDate.toUTCString(options).replace("00:00:00 GMT", "");
+}
+
+
 class GameCard extends Component {
     constructor(props) {
         super(props)
@@ -24,7 +33,7 @@ class GameCard extends Component {
     render() {
         return(
             <div>
-                <div>{this.props.item.date}</div>
+                <div className="date-line">{makeDateString(this.props.item.date)}</div>
                 <div className="day-wrapper">{this.renderGames()}</div>
             </div>
         )

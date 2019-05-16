@@ -6,6 +6,7 @@
     "mobx": "^5.9.4",
     "mobx-react": "^5.4.3",
     "react": "^16.8.6",
+    "react-day-picker": "^7.3.0",
     "react-dom": "^16.8.6",
     "react-player": "^1.11.0",
     "react-scripts": "3.0.1"
